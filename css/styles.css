@@ -1,0 +1,128 @@
+html {
+    height: 100%;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-weight: 400;
+    background-color: #fff;
+    color: #222;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* MAIN CONTENT */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+/* GLOBAL WRAPPER */
+.global-wrapper {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    flex-grow: 1;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    background-image: url(../img/left-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+}
+
+.hero-content {
+    max-width: 285px;
+}
+
+.hero-heading {
+    font-family: "Bebas Neue", "Roboto Condensed", "Arial", sans-serif;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-size: 24px;
+    line-height: normal;
+    letter-spacing: 2px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.hero-link {
+    font-family: "Bebas Neue", "Roboto Condensed", "Arial", sans-serif;
+    display: inline-block;
+    background-color: #1E90FF;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.hero-link:hover {
+    
+}
+
+.hero-link-inner {
+    display: flex;
+    padding: 12px 24px;
+}
+
+.hero-link-inner::before {
+    width: 20px;
+    height: 20px;
+    margin-right: 12px;
+    background-image: url(../img/icon-star.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    content: "";
+}
+
+
+/* RETINA BG */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+    .hero {
+        background-image: url(../img/left-bg@2x.jpg);
+    }
+}
