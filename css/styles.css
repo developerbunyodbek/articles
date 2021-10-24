@@ -99,7 +99,11 @@ img {
 }
 
 .hero-link:hover {
-    
+    opacity: 0.8;
+}
+
+.hero-link:active {
+    opacity: 0.6;
 }
 
 .hero-link-inner {
@@ -209,7 +213,7 @@ img {
     content: "";
     width: 16px;
     height: 16px;
-    margin-right: 4px;
+    margin-right: 5px;
     background-image: url("../img/icon-clock.svg");
     background-repeat: no-repeat;
     background-position: center center;
@@ -219,13 +223,13 @@ img {
 .item-lastest-videos-views {
     display: flex;
     align-items: center;
-
 }
 
 .item-lastest-videos-views::before {
     content: "";
     width: 16px;
     height: 16px;
+    margin-right: 5px;
     background-image: url("../img/icon-visibility.svg");
     background-repeat: no-repeat;
     background-position: center center;
